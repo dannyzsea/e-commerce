@@ -3,6 +3,9 @@
   display: flex;
   object-fit: contain;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header__logo {
@@ -49,4 +52,12 @@
 .header__optionTwo {
   font-size: 14px;
   font-weight: 800;
+}
+.header__optionCart {
+  padding-right: 20px;
+  display: flex;
+}
+.header__cartCount {
+  margin-left: 10px;
+  margin-right: 10px;
 }

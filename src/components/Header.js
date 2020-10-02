@@ -29,13 +29,12 @@ function Header() {
           </div>
         </Link>
 
-        <Link to="/Checkout" className="header__link">
+        <Link to="/checkout" className="header__link">
           <div className="header__optionCart">
             <span>
               <ShoppingCartIcon />
             </span>
-
-            <span className="header__optionTwo">0</span>
+            <span className="header__optionTwo header__cartCount"> 0 </span>
           </div>
         </Link>
       </div>
