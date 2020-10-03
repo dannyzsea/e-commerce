@@ -11,7 +11,7 @@
 .header__logo {
   width: 100px;
   font-weight: 900;
-  color: black;
+  color: #1e3799;
   cursor: pointer;
 }
 .header__search {
@@ -24,7 +24,6 @@
   border: none;
   width: 100%;
   border-radius: 15px;
-  outline: 0px solid transparent;
 }
 .header__searchIcon {
   color: white;
@@ -37,7 +36,7 @@
   justify-content: space-evenly;
 }
 .header__link {
-  color: black;
+  color: #1e3799;
   text-decoration: none;
 }
 .header__option {
