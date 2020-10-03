@@ -1,4 +1,5 @@
 import React from "react";
+import Product from "./Product";
 import "./Home.css";
 
 function Home() {
@@ -6,9 +7,47 @@ function Home() {
     <div className="home">
       <img
         className="home__image"
-        src="https://cdn.nimbusthemes.com/2017/09/09233341/Free-Nature-Backgrounds-Seaport-During-Daytime-by-Pexels.jpeg"
+        src="https://www.hortongroup.com/hs-fs/hubfs/Services%20Rework/backgrounds/websites%20and%20custom/ecommerce%20background.png?width=700&name=ecommerce%20background.png"
       />
-      <h1>Home page</h1>
+      <div className="home__row">
+        <Product
+          id="00001"
+          title="the best technology"
+          price={4000}
+          rating={5}
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVl6BWuDXRNf_dkoA69Yr3XZ7_sM7pnS0-1g&usqp=CAU"
+        />
+        <Product
+          id="00001"
+          title="the best technology"
+          price={4000}
+          rating={5}
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVl6BWuDXRNf_dkoA69Yr3XZ7_sM7pnS0-1g&usqp=CAU"
+        />
+      </div>
+      <div className="home__row">
+        <Product
+          id="00001"
+          title="the best technology"
+          price={4000}
+          rating={5}
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVl6BWuDXRNf_dkoA69Yr3XZ7_sM7pnS0-1g&usqp=CAU"
+        />
+        <Product
+          id="00001"
+          title="the best technology"
+          price={4000}
+          rating={5}
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVl6BWuDXRNf_dkoA69Yr3XZ7_sM7pnS0-1g&usqp=CAU"
+        />
+        <Product
+          id="00001"
+          title="the best technology"
+          price={4000}
+          rating={5}
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVl6BWuDXRNf_dkoA69Yr3XZ7_sM7pnS0-1g&usqp=CAU"
+        />
+      </div>
     </div>
   );
 }
