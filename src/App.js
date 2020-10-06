@@ -8,34 +8,37 @@ import Checkout from "./components/CheckOut";
 import { useStateValue } from "./components/StateProvider";
 import { auth } from "./components/firebase";
 function App() {
-  const [{}, dispatch] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
+
+  //useEffect <<<<<<< POWERFUL
+  //Piece of code which runs based on a given condition
 
   useEffect(() => {
-    // will only run once when the app component loads...
-
-    const unsubscribe = auth.onAuthStateChanged((authUser) => {
-      console.log("THE USER IS >>> ", authUser);
-
+    const unsuscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
-        // the user just logged in / the user was logged in
+        //the user is logged in.....
 
         dispatch({
           type: "SET_USER",
           user: authUser,
         });
       } else {
-        // the user is logged out
+        //the user is logged out....
         dispatch({
           type: "SET_USER",
           user: null,
         });
       }
     });
+
     return () => {
-      unsubscribe();
+      //Any cleanup operations go in here....
+      unsuscribe();
     };
   }, []);
-  console.log("User is ", user);
+
+  console.log("USER IS >>>> ", user);
+
   return (
     <Router>
       <Switch>
