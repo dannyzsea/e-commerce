@@ -23,6 +23,11 @@ function reducer(state, action) {
         newCart.splice(index, 1);
       }
       return { ...state, cart: newCart };
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user,
+      };
     default:
       return state;
   }
