@@ -1,2 +1,2 @@
 ### Click here for the Demo
-https://e-commerce-e9a9d.web.app
+https://console.firebase.google.com/project/e-commerce-e9a9d/o   
