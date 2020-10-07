@@ -19,6 +19,7 @@
 }
 .product__price {
   margin-top: 5px;
+  color: black;
 }
 .product__info {
   height: 100px;

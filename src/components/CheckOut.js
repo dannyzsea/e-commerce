@@ -21,7 +21,7 @@ function CheckOut() {
                 id={item.id}
                 title={item.title}
                 image={item.image}
-                pice={item.price}
+                price={item.price}
                 rating={item.rating}
               />
             ))}

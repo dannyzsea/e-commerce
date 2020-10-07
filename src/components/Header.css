@@ -46,7 +46,9 @@
   margin-right: 10px;
 }
 .header__optionOne {
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: italic;
 }
 .header__optionTwo {
   font-size: 14px;
